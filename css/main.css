@@ -33,3 +33,7 @@ height:200px;
 .menu a:hover {
     background-color:lightblue;
 }
+
+.img/anillo1.jpg {
+  float: right; /* Flota el elemento a la derecha y el texto lo rodea */
+}
