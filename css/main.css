@@ -34,6 +34,6 @@ height:200px;
     background-color:lightblue;
 }
 
-.imgright a {
-    text-align:right;
+.imgright {
+    text-align: left; 
 }
