@@ -34,9 +34,10 @@ height:200px;
     background-color:lightblue;
 }
 
-.contenedor{
+.contenedor-imagenes {
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 80px;         /* Espacio amplio entre imágenes */
+    flex-wrap: wrap;   /* Hace que sea amigable con celulares */
     margin-top: 50px;
 }
