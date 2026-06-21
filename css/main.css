@@ -35,10 +35,10 @@ height:200px;
 }
 
 .fotos { 
-    text-align:left;
+    text-align:center;
 }
 
-.menu a {
+.foto a {
     text-decoration: none;
     padding: 10px 15px;
     margin: 5px;
