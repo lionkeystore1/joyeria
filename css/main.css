@@ -65,8 +65,7 @@ cursor: pointer;
     margin-top: 50px;
 }
 
-.vista-img a:hover {
-    width:600px;
-    height:400px;
-    flex-wrap: wrap;  
-}
+.vista-img img{
+    width:500px;
+    height:300px;
+    
