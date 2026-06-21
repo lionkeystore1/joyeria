@@ -64,3 +64,9 @@ cursor: pointer;
     flex-wrap: wrap;  
     margin-top: 50px;
 }
+
+.vita-img a:hover {
+    width:600px;
+    height:400px;
+    flex-wrap: wrap;  
+}
