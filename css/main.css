@@ -34,10 +34,9 @@ height:200px;
     background-color:lightblue;
 }
 
-.contenedor-imagenes{
+.contenedor{
     display: flex;
     justify-content: center;
     gap: 40px;
-    flex-wrap: wrap;
     margin-top: 50px;
 }
