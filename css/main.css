@@ -41,3 +41,12 @@ height:200px;
     flex-wrap: wrap;   /* Hace que sea amigable con celulares */
     margin-top: 50px;
 }
+
+button{
+background-color: blue;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
