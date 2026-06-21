@@ -37,6 +37,6 @@ height:200px;
 .contenedor{
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 120px;
     margin-top: 50px;
 }
