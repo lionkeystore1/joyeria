@@ -54,7 +54,7 @@ cursor: pointer;
 .botones {
     display: flex;
     justify-content: center;
-    gap: 80px;   
+    gap: 200px;   
     flex-wrap: wrap;  
     margin-top: 50px;
 }
