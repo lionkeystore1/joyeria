@@ -1,57 +1,113 @@
+/* =========================
+   RESET
+========================= */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-/* ===== GENERAL ===== */
+/* =========================
+   GENERAL
+========================= */
 
 body{
-    background-color:lightblue;
     font-family:Arial, Helvetica, sans-serif;
     text-align:center;
     padding:20px;
+    background:linear-gradient(135deg,#dbeafe,#bfdbfe);
+    min-height:100vh;
 }
 
 h1{
-    color:blue;
-    font-size:clamp(2rem, 5vw, 4rem);
+    color:#0033cc;
+    font-size:clamp(2.5rem,5vw,4rem);
     margin:30px 0;
 }
 
-p{
-    color:blue;
-    font-size:1.3rem;
-    margin:10px 0;
+h2{
+    color:#0033cc;
+    margin-bottom:20px;
 }
 
-/* ===== MENU ===== */
+p{
+    color:#0033cc;
+    font-size:1.2rem;
+    margin:10px 0;
+    line-height:1.6;
+}
+
+/* =========================
+   MENÚ
+========================= */
 
 .menu{
-    background-color:blue;
+    background-color:#0033cc;
     padding:15px;
-    border-radius:10px;
+    border-radius:12px;
     margin-bottom:40px;
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
 }
 
 .menu a{
     color:white;
     text-decoration:none;
-    font-size:20px;
     font-weight:bold;
+    padding:10px 15px;
+    border-radius:6px;
+    transition:0.3s;
 }
 
 .menu a:hover{
-    color:lightblue;
+    background:white;
+    color:#0033cc;
 }
 
-/* ===== CATALOGO ===== */
+/* =========================
+   LOGO PORTADA
+========================= */
+
+.logo img{
+    width:100%;
+    max-width:350px;
+    height:auto;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+    margin:20px 0;
+}
+
+.bienvenida{
+    max-width:700px;
+    margin:20px auto;
+}
+
+/* =========================
+   PRESENTACIÓN
+========================= */
+
+.presentacion{
+    max-width:800px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+/* =========================
+   CATÁLOGO
+========================= */
 
 .contenedor-productos{
     display:flex;
     justify-content:center;
-    gap:30px;
     flex-wrap:wrap;
+    gap:30px;
 }
 
 .producto{
@@ -63,13 +119,15 @@ p{
 
 .producto img{
     width:300px;
-    height:430px;
+    height:400px;
     object-fit:cover;
     border-radius:12px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.25);
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
 }
 
-/* ===== PAGINA DE DETALLE ===== */
+/* =========================
+   DETALLE PRODUCTO
+========================= */
 
 .detalle-producto{
     display:flex;
@@ -82,8 +140,9 @@ p{
 .vista-img img{
     width:100%;
     max-width:500px;
-    border-radius:12px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.25);
+    height:auto;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
 }
 
 .info-producto{
@@ -92,51 +151,53 @@ p{
     gap:15px;
 }
 
-.info-producto p{
-    font-size:1.5rem;
-}
-
-/* ===== BOTONES ===== */
+/* =========================
+   BOTONES
+========================= */
 
 .botones{
     display:flex;
     justify-content:center;
-    gap:20px;
     flex-wrap:wrap;
+    gap:15px;
     margin-top:20px;
 }
 
 button{
-    background-color:blue;
+    background-color:#0033cc;
     color:white;
     border:none;
     padding:12px 25px;
-    border-radius:6px;
+    border-radius:8px;
     cursor:pointer;
     font-size:16px;
     transition:0.3s;
 }
 
 button:hover{
-    background-color:darkblue;
+    background-color:#001f80;
     transform:scale(1.05);
 }
 
-/* ===== TABLET ===== */
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width:900px){
 
     .producto img{
         width:250px;
-        height:350px;
+        height:330px;
     }
 
-    .info-producto p{
-        font-size:1.3rem;
+    .detalle-producto{
+        gap:30px;
     }
 }
 
-/* ===== MOVIL ===== */
+/* =========================
+   CELULAR
+========================= */
 
 @media (max-width:600px){
 
@@ -148,19 +209,28 @@ button:hover{
         font-size:2.2rem;
     }
 
-    .contenedor-productos{
+    p{
+        font-size:1rem;
+    }
+
+    .menu{
         flex-direction:column;
         align-items:center;
     }
 
-    .detalle-producto{
+    .contenedor-productos{
         flex-direction:column;
+        align-items:center;
     }
 
     .producto img{
         width:90%;
         max-width:320px;
         height:auto;
+    }
+
+    .detalle-producto{
+        flex-direction:column;
     }
 
     .vista-img img{
@@ -173,10 +243,10 @@ button:hover{
     }
 
     button{
-        width:200px;
+        width:220px;
     }
 
-    .info-producto p{
-        font-size:1.1rem;
+    .presentacion{
+        padding:20px;
     }
 }
